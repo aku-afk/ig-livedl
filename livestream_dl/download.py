@@ -18,14 +18,14 @@ from string import Formatter as StringFormatter
 import glob
 try:
     # py2
-    from urllib2 import URLError
-    from httplib import HTTPException
-    from ConfigParser import SafeConfigParser
+    from urllib3 import URLError
+    from httplib2 import HTTPException
+    import ConfigParser as SafeConfigParser
 except ImportError:
     # py3
     from urllib.error import URLError
     from http.client import HTTPException
-    from configparser import SafeConfigParser
+    import configparser as SafeConfigParser
 
 from instagram_private_api import (
     Client, ClientError, ClientCookieExpiredError, ClientLoginRequiredError
@@ -44,7 +44,7 @@ from .utils import (
 from .comments import CommentsDownloader
 
 
-__version__ = '0.3.8'
+__version__ = '0.3.8-repatch'
 
 USERNAME_ENV_KEY = 'IG_LOGIN_USERNAME'
 PASSWORD_ENV_KEY = 'IG_LOGIN_PASSWORD'
