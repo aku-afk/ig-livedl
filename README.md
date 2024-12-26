@@ -16,10 +16,23 @@ Python 2.7 and >=3.5 compatible.
 
 Make sure you have the [prerequisites](PREREQUISITES.md) installed.
 
+Instagram Private API :
+https://github.com/ping/instagram_private_api.git
+```bash
+pip install git+https://git@github.com/ping/instagram_private_api.git@1.6.0
+```
+Instagram Private API Extensions :
+https://github.com/ping/instagram_private_api_extensions.git
+```bash
+pip install git+https://git@github.com/ping/instagram_private_api_extensions.git@0.3.9
+```
+
 In the Command Prompt / Terminal:
 
 ```bash
-pip install git+https://git@github.com/taengstagram/instagram-livestream-downloader.git@0.3.8 --process-dependency-links
+git clone https://github.com/aku-afk/ig-livedl.git
+cd ig-livedl
+pip install ./
 ```
 
 ## Usage
