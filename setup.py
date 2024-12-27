@@ -20,7 +20,7 @@ setup(
     author_email=__email__,
     license='MIT',
     url='https://github.com/taengstagram/instagram-livestream-downloader/',
-    packages=['igldl'],
+    packages=['livestream_dl'],
     entry_points={
         'console_scripts': [
             'livestream_dl = livestream_dl.__main__:main',
